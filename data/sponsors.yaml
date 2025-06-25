@@ -1,0 +1,43 @@
+- name: "0"
+  logo: "img/sponsors/0.png"
+  alt:  "0"
+
+- name: "1"
+  logo: "img/sponsors/1.png"
+  alt:  "1"
+
+- name: "2"
+  logo: "img/sponsors/2.png"
+  alt:  "2"
+
+- name: "3"
+  logo: "img/sponsors/3.png"
+  alt:  "3"
+
+# - name: "4"
+#   logo: "img/sponsors/4.png"
+#   alt:  "4"
+#
+# - name: "5"
+#   logo: "img/sponsors/5.png"
+#   alt:  "5"
+#
+# - name: "6"
+#   logo: "img/sponsors/6.png"
+#   alt:  "6"
+#
+# - name: "7"
+#   logo: "img/sponsors/7.png"
+#   alt:  "7"
+#
+# - name: "8"
+#   logo: "img/sponsors/8.png"
+#   alt:  "8"
+#
+# - name: "9"
+#   logo: "img/sponsors/9.png"
+#   alt:  "9"
+#
+# - name: "10"
+#   logo: "img/sponsors/10.png"
+#   alt:  "10"
