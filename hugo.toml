@@ -90,11 +90,21 @@ hasCJKLanguage = true
   [[menu.footer]]
     name = "Home"
     url = "/"
-      weight = 1
+    weight = 1
+
+  [[menu.footer]]
+    name = "Email"
+    url = "mailto:mr2.kaist.rover@gmail.com"
+    weight = 2
 
   [[menu.footer]]
     name = "Github"
     url = "https://github.com/URC-kaist"
     pre = "<i class='fa-brands fa-github text-2xl'></i>"
-      weight = 2
+    weight = 3
 
+  [[menu.footer]]
+    name = "Youtube"
+    url = "https://www.youtube.com/@MR2KAISTRoverTeam"
+    pre = "<i class='fa-brands fa-youtube text-2xl'></i>"
+    weight = 4

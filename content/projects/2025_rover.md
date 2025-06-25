@@ -5,6 +5,8 @@ draft: false
 image: img/projects/2025_rover.png
 ---
 
+{{< youtube vFc6jCAq6a0 >}}
+
 ## Introduction
 We have developed a highly modular rover tailored for the URC SAR 2025 competition. Designed around quick interchangeability of science and manipulator modules, this platform emphasizes maintainability, reliability, and versatile mission performance across both delivery and science tasks.
 
