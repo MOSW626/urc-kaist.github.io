@@ -14,13 +14,10 @@ date = "2025-06-25"
   text-align: center;
   padding: 1rem;
   border: 1px solid #eee;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 .member-card img {
   width: 100%;
   height: auto;
-  border-radius: 9999px;
   margin-bottom: 0.75rem;
 }
 .member-card h3 {
