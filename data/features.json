@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Autonomous Systems",
+    "description": "Advanced AI and sensor fusion enable fully autonomous rover operations.",
+    "icon": "fa-solid fa-robot"
+  },
+  {
+    "title": "Mechanical Innovation",
+    "description": "Robust design with custom suspension, arm, and drivetrain for extreme terrain.",
+    "icon": "fa-solid fa-gear"
+  },
+  {
+    "title": "Open Source",
+    "description": "Explore our GitHub repositories and contribute to cutting-edge rover development.",
+    "icon": "fa-brands fa-github-alt",
+    "link": "https://github.com/URC-kaist"
+  }
+]
