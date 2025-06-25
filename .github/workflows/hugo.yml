@@ -1,0 +1,93 @@
+# .github/workflows/hugo.yml
+name: Deploy Hugo site (Tella) to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.128.0         # 사용 중인 Hugo 버전
+    steps:
+      # 1️⃣ Hugo CLI
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb \
+            https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      # 2️⃣ Tailwind/Sass CLI (Tella는 PostCSS로 Tailwind를 빌드합니다)
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      # 3️⃣ Node JS (필수 – PostCSS / esbuild 등을 npm script로 실행)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # 4️⃣ 소스 체크아웃 (+ 테마 서브모듈 포함)
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # 5️⃣ GitHub Pages 메타 데이터
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      # 6️⃣ npm 의존성 설치 (root 폴더에 exampleSite에서 복사해둔 package.json 필수)
+      - name: Install Node dependencies
+        run: |
+          if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      # 7️⃣ **Tella 빌드**  
+      #    package.json 안의 "build" 스크립트가  
+      #    - Tailwind/PostCSS → ./static/css  
+      #    - JS 번들링(esbuild) → ./static/js  
+      #    - hugo --gc --minify … → ./public  
+      #    를 순서대로 실행함
+      - name: Build site with npm (run Tella’s build script)
+        env:
+          # Tella의 build 스크립트에 전달할 Base URL
+          HUGO_ENVIRONMENT: production
+          BASE_URL: "${{ steps.pages.outputs.base_url }}/"
+        run: npm run build -- --baseURL "${BASE_URL}"
+
+      # 8️⃣ 정적 파일 아티팩트 업로드
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
