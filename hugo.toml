@@ -32,7 +32,7 @@ hasCJKLanguage = true
 
     # The size parameter is the class name of tailwindcss
     # https://tailwindcss.com/
-    size = "h-12 md:h-14 lg:h-16"
+    size = "h-8 md:h-9 lg:h-10"
 
   [params.site]
     name = "URC KAIST"
