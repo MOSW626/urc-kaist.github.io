@@ -1,0 +1,19 @@
+/* Fix slide z-index to prevent overlapping with dropdown */
+.swiper-container {
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-slide {
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 10;
+}
+
+.swiper-pagination {
+  z-index: 10;
+}

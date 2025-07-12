@@ -51,33 +51,33 @@ hasCJKLanguage = true
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "home"
+    name = "Home"
+    url = "/"
     weight = 1
 
   [[menu.main]]
-    identifier = "members"
-    name = "Members"
-    url = "/members/"
+    identifier = "about"
+    name = "About Us"
+    url = "/about/"
     weight = 2
 
   [[menu.main]]
-    identifier = "products"
-    name = "Projects"
-    url = "/projects/"
+    identifier = "rover"
+    name = "Rover"
+    url = "/rover/"
     weight = 3
-
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 4
 
   [[menu.main]]
     identifier = "docs"
     name = "Docs"
     url = "/docs/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
     weight = 5
 
   [[menu.main]]

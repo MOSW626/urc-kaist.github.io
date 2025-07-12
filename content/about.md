@@ -2,7 +2,7 @@
 title = "About"
 description = "About URC-KAIST"
 date = "2025-06-25"
-aliases = ["about-us", "about-hugo", "contact"]
+aliases = ["about-us", "about-hugo"]
 +++
 
 # MR² KAIST Rover Team
