@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ or .Site.Language.Lang " ja" }}">
-
 <head>
   {{- partial "head.html" . -}}
   <meta name="description" content="{{ .Site.Params.homepage_meta_tags.meta_og_description }}" />
@@ -13,62 +12,90 @@
   <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
   <meta name="twitter:creator" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_creator }}" />
 </head>
-
-<body>
+<body class="bg-gray-50">
   {{- partial "alert.html" . -}}
   {{- partial "header.html" . -}}
   <div class="scroll-top rounded-full">
     <span class="icon-keyboard_arrow_up text-2xl"></span>
   </div>
-  {{- partial "slide.html" . -}}
-  {{- partial "strip.html" . -}}
-  {{ with .Site.Data.sponsors }}
-  <div style="padding:3rem 0;">
-    <div style="max-width:1280px;margin:0 auto;">
-      <h2 style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:2rem;">
-        Our Sponsors & Affiliates
-      </h2>
-      <style>
-        .sponsor-grid {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 1.5rem 2rem;
-        }
 
-        .sponsor-logo {
-          max-width: 10rem;
-          max-height: 5rem;
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-        }
+  <!-- 1. 대형 슬라이드 배너 -->
+  <section class="relative">
+    {{- partial "slide.html" . -}}
+    <div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg text-center mb-4 pointer-events-auto">MR² KAIST ROVER TEAM</h1>
+      <p class="text-lg md:text-2xl text-white font-medium drop-shadow text-center pointer-events-auto">Autonomous Robotics, Engineered at KAIST</p>
+    </div>
+  </section>
 
-        @media (min-width:640px) {
-          .sponsor-logo {
-            max-width: 12rem;
-            max-height: 6rem;
-          }
-        }
-      </style>
-
-      <div class="sponsor-grid">
-        {{ range . }}
-        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="sponsor-logo" loading="lazy">
+  <!-- 2. 주요 섹션 카드(Quick Links) -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto max-w-6xl px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{ range .Site.Data.features }}
+        <a href="{{ .link | default '#' }}" class="block bg-gray-50 rounded-2xl shadow hover:shadow-xl transition p-8 text-center group">
+          <div class="flex justify-center mb-4">
+            {{ if .icon }}<span class="{{ .icon }} text-5xl text-indigo-500 group-hover:text-indigo-700"></span>{{ end }}
+          </div>
+          <h2 class="text-2xl font-bold mb-2">{{ .title }}</h2>
+          <p class="text-gray-600">{{ .description }}</p>
+        </a>
         {{ end }}
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- 3. 최근 소식/블로그 -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto max-w-6xl px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Latest News</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections )}}
+        <a href="{{ .Permalink }}" class="block bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+          {{ if .Params.image }}
+          <img alt="{{.Title}}" class="aspect-video object-cover w-full h-48" src="{{ .Params.image | relURL }}" />
+          {{ else }}
+          <img alt="{{.Title}}" class="aspect-video object-cover w-full h-48" src='{{ "/img/default.jpg" | relURL }}'>
+          {{ end }}
+          <div class="p-6">
+            <div class="text-gray-900 font-bold text-xl mb-2">{{ .Title }}</div>
+            <p class="text-gray-700 text-base pb-3">{{ substr .Summary 0 130 | plainify | htmlUnescape }}...</p>
+            <p class="text-sm text-gray-500"><time>{{ .Date.Format "2006/01/02" }}</time></p>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+      <div class="flex justify-center mt-8">
+        <a href="/blog/" class="px-8 py-3 bg-indigo-600 text-white rounded-lg font-semibold shadow hover:bg-indigo-700 transition">All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 스폰서/파트너 로고 -->
+  {{ with .Site.Data.sponsors }}
+  <section class="py-12 bg-white">
+    <div class="container mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold text-center mb-8">Our Sponsors & Affiliates</h2>
+      <div class="flex flex-wrap justify-center items-center gap-8">
+        {{ range . }}
+        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="max-h-20 max-w-xs object-contain grayscale hover:grayscale-0 transition" loading="lazy">
+        {{ end }}
+      </div>
+    </div>
+  </section>
   {{ end }}
 
-  {{ if ne .Site.Params.showBlog false }}
-  <div class="mx-auto my-10 max-w-6xl">
-    <h2 class="text-4xl ml-2">Blog</h2>
-    {{- partial "recent.html" . -}}
-  </div>
-  {{ end }}
+  <!-- 5. SNS/바로가기 등 (예시) -->
+  <section class="py-8 bg-gray-50">
+    <div class="container mx-auto max-w-6xl px-4 flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="https://github.com/URC-kaist" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-indigo-600 text-lg font-semibold"><i class="fa-brands fa-github-alt text-2xl"></i> GitHub</a>
+      <a href="https://www.youtube.com/@MR2KAISTRoverTeam" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-red-600 text-lg font-semibold"><i class="fa-brands fa-youtube text-2xl"></i> YouTube</a>
+      <a href="mailto:mr2.kaist.rover@gmail.com" class="flex items-center gap-2 text-gray-700 hover:text-green-600 text-lg font-semibold"><i class="fa-solid fa-envelope text-2xl"></i> Email</a>
+    </div>
+  </section>
+
   {{- partial "footer.html" . -}}
-  <script src="{{ " /js/swiper-bundle.min.js" | relURL }}"></script>
+  <script src="{{ "/js/swiper-bundle.min.js" | relURL }}"></script>
   <script>
     var mySwiper = new Swiper(".swiper-container", {
       direction: "horizontal",
@@ -87,5 +114,4 @@
     });
   </script>
 </body>
-
 </html>

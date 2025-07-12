@@ -1,0 +1,194 @@
+overview:
+  title: "Documentation"
+  subtitle: "URC-KAIST 기술 문서 허브"
+  description: "URC-KAIST의 기술 문서 허브에 오신 것을 환영합니다. 여기서는 화성 로버 개발 과정을 이해하기 위한 포괄적인 가이드, 기술 사양 및 리소스를 찾을 수 있습니다."
+
+quick_start:
+  title: "Quick Start"
+  subtitle: "빠른 시작 가이드"
+
+  new_members:
+    title: "신규 팀원을 위한"
+    description: "URC-KAIST에서 시작하기"
+    items:
+      - name: "Team Onboarding Guide"
+        description: "URC-KAIST 시작하기"
+        link: "/docs/onboarding/"
+        icon: "users"
+        color: "blue"
+
+      - name: "Development Environment Setup"
+        description: "개발 환경 설정"
+        link: "/docs/setup/"
+        icon: "computer"
+        color: "green"
+
+      - name: "Code of Conduct"
+        description: "팀 가이드라인 및 표준"
+        link: "/docs/code-of-conduct/"
+        icon: "shield"
+        color: "purple"
+
+  developers:
+    title: "개발자를 위한"
+    description: "기술적 개발 가이드"
+    items:
+      - name: "Software Architecture"
+        description: "소프트웨어 스택 개요"
+        link: "/docs/software/"
+        icon: "code"
+        color: "blue"
+
+      - name: "Hardware Specifications"
+        description: "상세한 하드웨어 문서"
+        link: "/docs/hardware/"
+        icon: "wrench"
+        color: "green"
+
+      - name: "API Reference"
+        description: "소프트웨어 API 문서"
+        link: "/docs/api/"
+        icon: "database"
+        color: "yellow"
+
+  researchers:
+    title: "연구자를 위한"
+    description: "연구 및 실험 가이드"
+    items:
+      - name: "Research Papers"
+        description: "발표된 연구 및 기술 논문"
+        link: "/docs/papers/"
+        icon: "document"
+        color: "blue"
+
+      - name: "Experiment Protocols"
+        description: "과학적 실험 절차"
+        link: "/docs/experiments/"
+        icon: "flask"
+        color: "green"
+
+      - name: "Data Analysis"
+        description: "데이터 처리 및 분석 방법"
+        link: "/docs/analysis/"
+        icon: "chart"
+        color: "purple"
+
+technical_resources:
+  title: "Technical Resources"
+  subtitle: "기술적 리소스"
+
+  software:
+    title: "Software"
+    description: "소프트웨어 시스템"
+    items:
+      - name: "Navigation System"
+        description: "SLAM 알고리즘 및 경로계획"
+        icon: "location"
+        color: "blue"
+
+      - name: "Control Systems"
+        description: "모터 제어 및 센서 융합"
+        icon: "settings"
+        color: "green"
+
+      - name: "Communication"
+        description: "네트워크 프로토콜 및 데이터 전송"
+        icon: "wifi"
+        color: "yellow"
+
+      - name: "Science Payload"
+        description: "실험 제어 및 데이터 수집"
+        icon: "flask"
+        color: "purple"
+
+  hardware:
+    title: "Hardware"
+    description: "하드웨어 시스템"
+    items:
+      - name: "Mechanical Design"
+        description: "CAD 파일 및 조립 지침"
+        icon: "cube"
+        color: "blue"
+
+      - name: "Electrical Systems"
+        description: "회로도 및 부품 사양"
+        icon: "bolt"
+        color: "green"
+
+      - name: "Power Management"
+        description: "배터리 시스템 및 전력 분배"
+        icon: "battery"
+        color: "yellow"
+
+      - name: "Sensor Integration"
+        description: "카메라, IMU, GPS 시스템"
+        icon: "eye"
+        color: "purple"
+
+  testing:
+    title: "Testing & Validation"
+    description: "테스트 및 검증"
+    items:
+      - name: "Simulation"
+        description: "Software-in-the-loop 테스트"
+        icon: "computer"
+        color: "blue"
+
+      - name: "Field Testing"
+        description: "실제 환경 검증 절차"
+        icon: "map"
+        color: "green"
+
+      - name: "Performance Metrics"
+        description: "평가 기준 및 벤치마크"
+        icon: "chart"
+        color: "yellow"
+
+contributing:
+  title: "Contributing"
+  subtitle: "기여하기"
+  description: "프로젝트에 기여하는 방법"
+  items:
+    - name: "Contribution Guidelines"
+      description: "프로젝트 기여 방법"
+      link: "/docs/contributing/"
+      icon: "handshake"
+      color: "blue"
+
+    - name: "Code Review Process"
+      description: "코드 리뷰 표준 및 절차"
+      link: "/docs/review/"
+      icon: "check"
+      color: "green"
+
+    - name: "Documentation Standards"
+      description: "문서 작성 및 유지 관리"
+      link: "/docs/doc-standards/"
+      icon: "document"
+      color: "purple"
+
+external_resources:
+  title: "External Resources"
+  subtitle: "외부 리소스"
+  description: "추가 참고 자료"
+  items:
+    - name: "URC Official Rules"
+      description: "대회 규칙 및 요구사항"
+      link: "https://urc.marssociety.org/"
+      icon: "external"
+      color: "blue"
+
+    - name: "GitHub Repository"
+      description: "소스 코드 및 프로젝트 파일"
+      link: "https://github.com/URC-kaist"
+      icon: "github"
+      color: "green"
+
+    - name: "Team Wiki"
+      description: "내부 팀 문서"
+      link: "https://github.com/URC-kaist/wiki"
+      icon: "wiki"
+      color: "purple"
+
+footer:
+  note: "이 문서는 지속적으로 업데이트됩니다. 오류를 발견하거나 제안사항이 있으시면 문서팀에 연락해 주세요."

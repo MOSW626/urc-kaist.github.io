@@ -1,0 +1,99 @@
+overview:
+  title: "Our Mars Rover"
+  subtitle: "혁신적인 기술과 견고한 엔지니어링 원칙의 결합"
+  description: "University Rover Challenge의 까다로운 요구사항을 충족하도록 설계된 우리의 화성 로버는 최첨단 기술과 견고한 엔지니어링 원칙을 결합합니다."
+
+current_rover:
+  name: "2025 URC SAR"
+  year: "2025"
+  competition: "URC SAR 2025"
+  image: "/img/projects/2025_rover.png"
+  video_id: "vFc6jCAq6a0"
+  status: "개발 완료"
+  outcome: "본선 진출 실패했지만 설계, 시뮬레이션, 현장 테스트를 통한 귀중한 인사이트 획득"
+
+key_features:
+  - title: "Modular Design"
+    description: "빠른 교체 가능한 과학 및 조작 모듈"
+    icon: "puzzle"
+    details:
+      - "과학 및 조작 모듈의 빠른 교체 가능성"
+      - "쉬운 유지보수 및 업그레이드"
+      - "다양한 미션 성능"
+    color: "blue"
+
+  - title: "Advanced Navigation"
+    description: "센티미터 수준의 정확도를 위한 이중 RTK GNSS 수신기"
+    icon: "location"
+    details:
+      - "센티미터 수준 정확도를 위한 이중 RTK GNSS 수신기"
+      - "IMU 및 RGB-D 카메라 융합"
+      - "OpenCV를 통한 AR 태그 인식"
+      - "자체 개발 SLAM 알고리즘 ('time map')"
+    color: "green"
+
+  - title: "Autonomous Capabilities"
+    description: "실시간 3D 환경 매핑 및 복잡한 작업 실행"
+    icon: "robot"
+    details:
+      - "실시간 3D 환경 매핑"
+      - "인간 개입 없이 복잡한 작업 실행"
+      - "정밀한 샘플 수집 및 모듈 교체"
+      - "견고한 통신 프로토콜"
+    color: "purple"
+
+specifications:
+  communication:
+    title: "Communication & Positioning"
+    description: "저지연, 신뢰할 수 있는 데이터 교환을 위한 통신 프로토콜"
+    features:
+      - "저지연, 신뢰할 수 있는 데이터 교환"
+      - "센티미터 수준 정확도를 위한 이중 RTK GNSS 수신기"
+      - "IMU 및 RGB-D 카메라 융합"
+      - "OpenCV를 통한 AR 태그 인식"
+
+  autonomy:
+    title: "Autonomy & Mission Performance"
+    description: "실시간 3D 환경 표현을 구축하고 업데이트하는 자체 개발 SLAM 알고리즘"
+    features:
+      - "실시간 3D 환경 매핑 ('time map' 알고리즘)"
+      - "SLAM, RTK/IMU 데이터, AR 태그 인식 융합"
+      - "정밀한 샘플 수집부터 모듈 교체까지 복잡한 작업 실행"
+      - "초기 목표 지정 외 인간 개입 없이 자율 운영"
+
+  modular_architecture:
+    title: "Modular Architecture"
+    description: "다양한 미션을 위한 과학 및 조작 모듈"
+    features:
+      - "과학 및 조작 모듈의 빠른 교체"
+      - "유지보수성 및 신뢰성 강조"
+      - "배송 및 과학 작업 모두에서 다양한 미션 성능"
+      - "플랫폼 기반 설계"
+
+technical_details:
+  sensors:
+    - "Dual RTK GNSS receivers"
+    - "IMU (Inertial Measurement Unit)"
+    - "RGB-D camera"
+    - "AR tag recognition system"
+
+  software:
+    - "In-house SLAM algorithm ('time map')"
+    - "OpenCV for computer vision"
+    - "Real-time 3D mapping"
+    - "Autonomous navigation system"
+
+  hardware:
+    - "Modular science payload"
+    - "Manipulator arm system"
+    - "Robust chassis design"
+    - "Power management system"
+
+future_plans:
+  title: "Looking Ahead"
+  description: "URC SAR 2025에서 얻은 교훈을 바탕으로 URC 2026에 더욱 강력하게 돌아올 준비를 하고 있습니다."
+  goals:
+    - "설계, 시뮬레이션, 현장 테스트를 통한 인사이트 적용"
+    - "다음 도전을 위한 교훈 활용"
+    - "URC 2026에서 더욱 강력한 성과 달성"
+    - "지속적인 기술 혁신 및 개선"

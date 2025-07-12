@@ -1,0 +1,84 @@
+leadership:
+  title: "Leadership"
+  description: "전체 프로젝트 관리 및 전략적 의사결정"
+  members:
+    - name: "Jung Myungwoo"
+      role: "Team Leader"
+      description: "전체 프로젝트 관리 및 조율, 전략적 계획 및 의사결정"
+
+technical_teams:
+  - name: "Software Team"
+    leader: "Myung Gyungmin"
+    members:
+      - "Jeon Jaewon"
+    description: "자율주행 알고리즘, SLAM 및 경로계획, 과학 대시보드 개발"
+    responsibilities:
+      - "Autonomous navigation algorithms"
+      - "SLAM and path planning"
+      - "Science dashboard development"
+      - "Communication protocols"
+    color: "blue"
+    icon: "code"
+
+  - name: "Hardware Team"
+    leader: "Choi Junbin"
+    members:
+      - "Joo Minchan"
+      - "Kim Donghee"
+    description: "기계 설계 및 제작, 로봇 팔 개발, 섀시 및 이동 시스템"
+    responsibilities:
+      - "Mechanical design and fabrication"
+      - "Robot arm development"
+      - "Chassis and mobility systems"
+      - "Structural analysis"
+    color: "green"
+    icon: "wrench"
+
+  - name: "Electrical Systems Team"
+    leader: "Seo Jung-geun"
+    members:
+      - "Ahn Yeonsu"
+    description: "전력 관리 시스템, 센서 통합, 제어 시스템, 통신 하드웨어"
+    responsibilities:
+      - "Power management systems"
+      - "Sensor integration"
+      - "Control systems"
+      - "Communication hardware"
+    color: "yellow"
+    icon: "bolt"
+
+  - name: "Science Team"
+    leader: "Kim Robin"
+    members:
+      - "Noh Gyungmin"
+      - "Kim Heetae"
+    description: "과학 페이로드 설계, 생물학 실험, 장비 복제 제작, 미션 계획"
+    responsibilities:
+      - "Scientific payload design"
+      - "Bio experiments"
+      - "Equipment replica fabrication"
+      - "Mission planning"
+    color: "purple"
+    icon: "flask"
+
+support_teams:
+  - name: "Management Team"
+    leader: "Ahn Yeonsu"
+    members: []
+    description: "예산 및 자원 관리, 문서화 및 보고, 외부 커뮤니케이션"
+    responsibilities:
+      - "Budget and resource management"
+      - "Documentation and reporting"
+      - "External communications"
+      - "Team coordination"
+    color: "red"
+    icon: "chart-bar"
+
+collaboration:
+  title: "Collaboration Model"
+  description: "우리 팀은 다음과 같은 협업 모델로 운영됩니다"
+  principles:
+    - "각 팀은 기술적 의사결정에 자율성을 가집니다"
+    - "정기적인 크로스팀 미팅으로 통합을 보장합니다"
+    - "공유 자원 및 지식 베이스를 활용합니다"
+    - "지속적인 피드백 및 반복 사이클을 운영합니다"

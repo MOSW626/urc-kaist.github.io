@@ -1,0 +1,139 @@
+leadership:
+  - name: "Jung Myungwoo"
+    role: "MR2 Team Leader"
+    team: "Leadership"
+    image: "/img/members/2025/JungMyungWoo.jpeg"
+    description: "전체 로버 개발 총괄"
+    responsibilities:
+      - "전체 프로젝트 관리 및 조율"
+      - "전략적 계획 및 의사결정"
+      - "팀 간 협업 조율"
+
+technical_teams:
+  software:
+    - name: "Myung Gyungmin"
+      role: "Software Team Leader"
+      team: "Software"
+      image: "/img/members/2025/MyungGyungMin.jpeg"
+      description: "로버 소프트웨어 개발 총괄"
+      responsibilities:
+        - "자율주행 알고리즘 개발"
+        - "SLAM 및 경로계획"
+        - "과학 대시보드 개발"
+        - "통신 프로토콜"
+
+    - name: "Jeon Jaewon"
+      role: "Software Team Member"
+      team: "Software"
+      image: "/img/members/2025/JeonJaeWon.jpeg"
+      description: "과학 대시보드 소프트웨어 개발"
+      responsibilities:
+        - "과학 대시보드 소프트웨어 개발"
+        - "사용자 인터페이스 설계"
+        - "데이터 시각화"
+
+  hardware:
+    - name: "Choi Junbin"
+      role: "Hardware Team Leader"
+      team: "Hardware"
+      image: "/img/members/2025/ChoiJunBin.jpeg"
+      description: "로버 하드웨어 개발 총괄"
+      responsibilities:
+        - "기계 설계 및 제작"
+        - "로봇 팔 개발"
+        - "섀시 및 이동 시스템"
+        - "구조 분석"
+
+    - name: "Joo Minchan"
+      role: "Hardware Team Member"
+      team: "Hardware"
+      image: "/img/members/2025/JooMinChan.jpeg"
+      description: "로봇 팔 하드웨어 개발"
+      responsibilities:
+        - "로봇 팔 하드웨어 개발"
+        - "기계 설계"
+        - "제작 및 조립"
+
+    - name: "Kim Donghee"
+      role: "Hardware Team Member"
+      team: "Hardware"
+      image: "/img/members/2025/KimDongHee.jpeg"
+      description: "하드웨어 개발"
+      responsibilities:
+        - "하드웨어 개발"
+        - "기계 설계"
+        - "제작 및 테스트"
+
+  electrical:
+    - name: "Seo Jung-geun"
+      role: "Electrical Systems Team Leader"
+      team: "Electrical"
+      image: "/img/members/2025/SeoJungGeun.jpeg"
+      description: "로버 전기 시스템 개발 총괄"
+      responsibilities:
+        - "전력 관리 시스템"
+        - "센서 통합"
+        - "제어 시스템"
+        - "통신 하드웨어"
+
+    - name: "Ahn Yeonsu"
+      role: "Electrical Systems Team Member"
+      team: "Electrical"
+      image: "/img/members/2025/AhnYeonSu.jpeg"
+      description: "전기 시스템 개발"
+      responsibilities:
+        - "전기 시스템 개발"
+        - "센서 통합"
+        - "제어 시스템"
+
+  science:
+    - name: "Kim Robin"
+      role: "Science Team Leader"
+      team: "Science"
+      image: "/img/members/2025/KimRoBin.jpeg"
+      description: "로버 과학 미션 실험 총괄"
+      responsibilities:
+        - "과학 페이로드 설계"
+        - "생물학 실험"
+        - "장비 복제 제작"
+        - "미션 계획"
+
+    - name: "Noh Gyungmin"
+      role: "Bio & Replica"
+      team: "Science"
+      image: "/img/members/2025/NohGyungMin.jpeg"
+      description: "생물학 실험 및 장비 복제 제작"
+      responsibilities:
+        - "생물학 실험"
+        - "장비 복제 제작"
+        - "과학 페이로드"
+
+    - name: "Kim Heetae"
+      role: "Bio & Replica"
+      team: "Science"
+      image: "/img/members/2025/KimHeeTae.jpeg"
+      description: "생물학 실험 및 장비 복제 제작"
+      responsibilities:
+        - "생물학 실험"
+        - "장비 복제 제작"
+        - "과학 페이로드"
+
+management:
+  - name: "Ahn Yeonsu"
+    role: "Management Team Leader"
+    team: "Management"
+    image: "/img/members/2025/AhnYeonSu.jpeg"
+    description: "팀 관리 및 전기 시스템 개발"
+    responsibilities:
+      - "예산 및 자원 관리"
+      - "문서화 및 보고"
+      - "외부 커뮤니케이션"
+      - "팀 조율"
+
+team_colors:
+  Leadership: "blue"
+  Software: "blue"
+  Hardware: "green"
+  Electrical: "yellow"
+  Science: "purple"
+  Management: "red"

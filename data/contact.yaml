@@ -1,0 +1,90 @@
+overview:
+  title: "Contact"
+  subtitle: "URC-KAIST에 연락하기"
+  description: "URC-KAIST에 문의사항이 있으시거나 함께하고 싶으시다면 언제든 연락해 주세요."
+
+contact_info:
+  email:
+    title: "Email"
+    value: "mr2.kaist.rover@gmail.com"
+    link: "mailto:mr2.kaist.rover@gmail.com"
+    icon: "mail"
+    color: "blue"
+    description: "이메일로 문의사항을 보내주세요"
+
+  location:
+    title: "Location"
+    address_kr: "대전광역시 유성구 대학로 291 N13 태울관 3102호 (구성동, 한국과학기술원)"
+    address_en: "Daehak-ro 291, N13 #3102, Yuseong-Gu, Daejeon, Republic of Korea"
+    icon: "location"
+    color: "green"
+    description: "카이스트 태울관에서 활동하고 있습니다"
+
+  github:
+    title: "GitHub"
+    value: "github.com/URC-kaist"
+    link: "https://github.com/URC-kaist"
+    icon: "github"
+    color: "purple"
+    description: "GitHub에서 프로젝트를 확인하세요"
+
+  instagram:
+    title: "Instagram"
+    value: "@urc_kaist"
+    link: "https://instagram.com/urc_kaist"
+    icon: "instagram"
+    color: "pink"
+    description: "Instagram에서 최신 소식을 확인하세요"
+
+contact_form:
+  title: "Contact Form"
+  subtitle: "문의사항을 보내주세요"
+  description: "아래 양식을 작성하여 문의사항을 보내주세요."
+
+  fields:
+    - name: "name"
+      label: "이름"
+      type: "text"
+      required: true
+      placeholder: "이름을 입력하세요"
+
+    - name: "email"
+      label: "이메일"
+      type: "email"
+      required: true
+      placeholder: "이메일을 입력하세요"
+
+    - name: "subject"
+      label: "제목"
+      type: "text"
+      required: true
+      placeholder: "제목을 입력하세요"
+
+    - name: "message"
+      label: "메시지"
+      type: "textarea"
+      required: true
+      placeholder: "문의사항을 입력하세요"
+      rows: 5
+
+  submit_button:
+    text: "메시지 보내기"
+    icon: "send"
+
+faq:
+  title: "Frequently Asked Questions"
+  subtitle: "자주 묻는 질문"
+  description: "자주 묻는 질문들을 확인해보세요."
+
+  items:
+    - question: "URC-KAIST에 어떻게 참여할 수 있나요?"
+      answer: "카이스트 재학생이라면 언제든 지원할 수 있습니다. 이메일로 문의해 주시면 자세한 안내를 드리겠습니다."
+
+    - question: "팀 활동은 언제 이루어지나요?"
+      answer: "주로 주중 저녁과 주말에 태울관 3102호에서 활동합니다. 정확한 일정은 팀원들과 조율하여 결정됩니다."
+
+    - question: "기술적 배경이 없어도 참여할 수 있나요?"
+      answer: "네, 가능합니다. 다양한 분야의 학생들이 필요하며, 팀 내에서 필요한 기술을 배울 수 있는 기회를 제공합니다."
+
+footer:
+  note: "빠른 답변을 원하시면 이메일로 직접 연락해 주세요."
