@@ -282,7 +282,7 @@ date = "2025-06-25"
                 </div>
             </a>
 
-            <a href="/docs" class="group">
+            <a href="https://urc-kaist.github.io/docs/" target="_blank" rel="noopener noreferrer" class="group">
                 <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-2xl mb-6 group-hover:bg-green-200 transition-colors duration-300">
                         <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
